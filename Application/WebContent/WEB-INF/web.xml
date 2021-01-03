@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>Suspicious-Email-Detection</display-name>
+  <servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>SyStem.Register</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/Register.jsp</url-pattern>
+	</servlet-mapping> 
+	<servlet>
+		<servlet-name>Inbox</servlet-name>
+		<servlet-class>SyStem.Inbox</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>Inbox</servlet-name>
+		<url-pattern>/Inbox.jsp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	
+	<!-- Email registration starts here :-->
+		<servlet-name>EmailRegiste</servlet-name>
+		<servlet-class>SyStem.EmailRegister</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>EmailRegiste</servlet-name>
+		<url-pattern>/EmailRegister.jsp</url-pattern>
+	</servlet-mapping>
+	<!-- Email registration ends here :-->
+	
+	
+	<!-- Admin Panel starts here      : -->
+	<servlet>
+		<servlet-name>AdminPanel</servlet-name>
+		<servlet-class>SyStem.AdminPanel</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>AdminPanel</servlet-name>
+		<url-pattern>/AdminPanel.jsp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Admin_Settings</servlet-name>
+		<servlet-class>SyStem.Admin_Settings</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>Admin_Settings</servlet-name>
+		<url-pattern>/Admin_Settings.jsp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Admin_SuspiciousUsers</servlet-name>
+		<servlet-class>SyStem.Admin_SuspiciousUsers</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>Admin_SuspiciousUsers</servlet-name>
+		<url-pattern>/Admin_SuspiciousUsers.jsp</url-pattern>
+	</servlet-mapping>
+	      <!--  Admin Panel end here -->
+
+	
+	<servlet> 
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>SyStem.Login</servlet-class>
+	</servlet>
+	
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login.jsp</url-pattern>
+  </servlet-mapping>
+  	<servlet>
+		<servlet-name>Outbox</servlet-name>
+		<servlet-class>SyStem.Outbox</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>Outbox</servlet-name>
+		<url-pattern>/Outbox.jsp</url-pattern>
+	</servlet-mapping>
+</web-app>
